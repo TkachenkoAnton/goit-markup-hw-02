@@ -1,5 +1,13 @@
+/* Fonts
+Main - Roboto 400 500 700 900
+Logo - Raleway 700 */
+/* Color palette
+Main - 
+Headline - 
+Logo - */
+
 body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 }
 .logo {
   color: #2196f3;

@@ -1,6 +1,8 @@
 /* Fonts
 Primary - Roboto 400 500 700 900
-Logo - Raleway 700 */
+Logo - Raleway 700 
+*/
+
 /* Color palette
 Primary Background Color: #FFFFFF
 Primary Font Color - #757575
@@ -9,12 +11,12 @@ Logo Top Color - #000000
 Logo Bottom Color - #ffffff 
 Pages Name - #212121
 Primary Headline - #212121
-H1 Headline - #ffffff
-What Are We Doing Item - #ffffff
+H1 H3 Headline - #ffffff
 Footer Head Elements - #ffffff
 Footer Elements - rgba(255, 255, 255, 0.6)
 Active State - #2196F3
 */
+
 :root {
   --primary-background-color: #ffffff;
   --primary-font-color: #757575;
@@ -23,8 +25,7 @@ Active State - #2196F3
   --logo-bottom-color: #ffffff;
   --pages-name: #212121;
   --primary-headline: #212121;
-  --h1-headline: #ffffff;
-  --whatarewedoingitem: #ffffff;
+  --h1-h3-headline: #ffffff;
   --footerheadelements: #ffffff;
   --footerelements: rgba(255, 255, 255, 0.6);
   --activestate: #2196f3;
@@ -36,6 +37,7 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+
 /* Logo */
 .logo {
   color: var(--primary-logo-color);

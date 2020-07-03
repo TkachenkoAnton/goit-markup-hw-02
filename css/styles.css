@@ -16,8 +16,12 @@ Footer Head Elements - #ffffff
 Footer Elements - rgba(255, 255, 255, 0.6)
 Joinin Links Background - rgba(255, 255, 255, 0.1)
 Active State - #2196F3
-*/
 
+Портфолио 
+
+Filters Button Background - #F5F4FA
+Filters - #212121
+*/
 :root {
   --primary-text-font: "Roboto", sans-serif;
   --logo-text-font: "Raleway", sans-serif;
@@ -34,6 +38,9 @@ Active State - #2196F3
   --footerelements: rgba(255, 255, 255, 0.6);
   --joinin-links-background: rgba(255, 255, 255, 0.1);
   --activestate: #2196f3;
+  /* Портфолио */
+  --filtersbuttonbackground: #f5f4fa;
+  --filters: #212121;
 }
 
 body {
@@ -201,5 +208,43 @@ body {
 }
 .joinin-links:hover,
 .joinin-links:focus {
+  color: var(--activestate);
+}
+
+/* Портфолио */
+/* Наши проекты */
+/* Фильтры */
+.filters-btn {
+  background-color: var(--filtersbuttonbackground);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  color: var(--filters);
+}
+.filters-btn:hover,
+.filters-btn:focus {
+  color: var(--activestate);
+}
+/* Примеры работ */
+
+.example-list-item .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-headline);
+}
+.example-list-item .description {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-font-color);
+}
+.example-list-item .about {
+  font-size: 18px;
+  line-height: 1.56;
+}
+.example-links:hover,
+.example-links:focus {
   color: var(--activestate);
 }

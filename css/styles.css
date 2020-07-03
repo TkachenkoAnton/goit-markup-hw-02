@@ -14,6 +14,7 @@ Primary Headline - #212121
 H1 H3 Headline - #ffffff
 Footer Head Elements - #ffffff
 Footer Elements - rgba(255, 255, 255, 0.6)
+Joinin Links Background - rgba(255, 255, 255, 0.1)
 Active State - #2196F3
 */
 
@@ -25,11 +26,13 @@ Active State - #2196F3
   --primary-logo-color: #2196f3;
   --logo-top-color: #000000;
   --logo-bottom-color: #ffffff;
+  --main-bottom-color: #ffffff;
   --pages-name: #212121;
   --primary-headline: #212121;
   --h1-h3-headline: #ffffff;
   --footerheadelements: #ffffff;
   --footerelements: rgba(255, 255, 255, 0.6);
+  --joinin-links-background: rgba(255, 255, 255, 0.1);
   --activestate: #2196f3;
 }
 
@@ -39,7 +42,32 @@ body {
   font-family: var(--primary-text-font);
   letter-spacing: 0.03em;
 }
-
+/* Общие стили */
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/* Верхняя линия */
+/* Навигация и контакты */
+.navigation-item,
+.contacts-list-item-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--pages-name);
+}
+.contacts-list-item-link {
+  color: var(--primary-font-color);
+}
+.navigation-item:hover,
+.navigation-item:focus,
+.contacts-list-item-link:hover,
+.contacts-list-item-link:focus {
+  color: var(--activestate);
+}
 /* Logo */
 .logo {
   color: var(--primary-logo-color);
@@ -47,8 +75,131 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
 }
 .logotop {
   color: var(--logo-top-color);
+}
+
+/* Шапка */
+.main-headline {
+  /* Временный фон */
+  background-color: plum;
+  /* Временный фон */
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--h1-h3-headline);
+}
+.main-btn {
+  background-color: var(--activestate);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-bottom-color);
+}
+
+/* Особености */
+.features-list-item .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-headline);
+}
+.features-list-item .description {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Чем Мы Занимаемся */
+.whatarewedoing-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--primary-headline);
+}
+.whatarewedoing-list-item .title {
+  /* Временный фон */
+  background-color: plum;
+  /* Временный фон */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  color: var(--h1-h3-headline);
+}
+
+/* Наша Команда */
+.ourteam-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--primary-headline);
+}
+.ourteam-list-item .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  color: var(--primary-headline);
+}
+.ourteam-list-item .description {
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+}
+.socialnetworks-links {
+  color: inherit;
+}
+.socialnetworks-links:hover,
+.socialnetworks-links:focus {
+  color: var(--activestate);
+}
+
+/* Постоянные клиенты */
+.partners-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--primary-headline);
+}
+
+/* Подвал */
+.footer {
+  /* Временный фон */
+  background-color: plum;
+  /* Временный фон */
+}
+.logobottom {
+  color: var(--logo-bottom-color);
+}
+.address-item-street,
+.address-item-contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--footerheadelements);
+}
+.address-item-contacts {
+  color: var(--footerelements);
+}
+.joinin {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--footerheadelements);
+}
+.joinin-links {
+  background: var(--joinin-links-background);
+}
+.joinin-links:hover,
+.joinin-links:focus {
+  color: var(--activestate);
 }

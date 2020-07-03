@@ -18,6 +18,8 @@ Active State - #2196F3
 */
 
 :root {
+  --primary-text-font: "Roboto", sans-serif;
+  --logo-text-font: "Raleway", sans-serif;
   --primary-background-color: #ffffff;
   --primary-font-color: #757575;
   --primary-logo-color: #2196f3;
@@ -34,14 +36,14 @@ Active State - #2196F3
 body {
   background-color: var(--primary-background-color);
   color: var(--primary-font-color);
-  font-family: Roboto, sans-serif;
+  font-family: var(--primary-text-font);
   letter-spacing: 0.03em;
 }
 
 /* Logo */
 .logo {
   color: var(--primary-logo-color);
-  font-family: Raleway;
+  font-family: var(--logo-text-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;

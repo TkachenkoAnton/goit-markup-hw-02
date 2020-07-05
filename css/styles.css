@@ -175,7 +175,8 @@ body {
 }
 .socialnetworks-links:hover,
 .socialnetworks-links:focus {
-  color: var(--activestate);
+  background-color: var(--activestate);
+  color: var(--primary-background-color);
 }
 
 /* Постоянные клиенты */

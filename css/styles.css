@@ -12,6 +12,7 @@ Logo Bottom Color - #ffffff
 Pages Name - #212121
 Primary Headline - #212121
 H1 H3 Headline - #ffffff
+Main Button Hover - #188CE8
 Footer Head Elements - #ffffff
 Footer Elements - rgba(255, 255, 255, 0.6)
 Joinin Links Background - rgba(255, 255, 255, 0.1)
@@ -34,6 +35,7 @@ Filters - #212121
   --pages-name: #212121;
   --primary-headline: #212121;
   --h1-h3-headline: #ffffff;
+  --main-button-hover: #188ce8;
   --footerheadelements: #ffffff;
   --footerelements: rgba(255, 255, 255, 0.6);
   --joinin-links-background: rgba(255, 255, 255, 0.1);
@@ -111,6 +113,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-bottom-color);
+}
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--main-button-hover);
 }
 
 /* Особености */

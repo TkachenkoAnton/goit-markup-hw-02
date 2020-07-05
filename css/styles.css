@@ -191,7 +191,7 @@ body {
 /* Подвал */
 .footer {
   /* Временный фон */
-  background-color: plum;
+  background-color: #2f303a;
   /* Временный фон */
 }
 .logobottom {
@@ -215,6 +215,7 @@ body {
 }
 .joinin-links {
   background: var(--joinin-links-background);
+  color: var(--primary-background-color);
 }
 .joinin-links:hover,
 .joinin-links:focus {

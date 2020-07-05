@@ -217,7 +217,7 @@ body {
 }
 .joinin-links:hover,
 .joinin-links:focus {
-  color: var(--activestate);
+  background-color: var(--activestate);
 }
 
 /* Портфолио */
